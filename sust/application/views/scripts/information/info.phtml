@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="/css/student/info.css?4" rel="StyleSheet" type="text/css">
+	<script src="/js/jquery-1.12.0.js" type="text/javascript"></script>
+	<script src="/js/box/zDialog.js" type="text/javascript"></script>
+	<script src="/js/student/info.js?2" type="text/javascript"></script>
+</head>
+<body>
+	<div id="info">
+		<div id="infolist">
+			<form>
+				<div class="input">
+					 姓　　名：<input type="text" name="name" id="name" value="<?=$this->name?>" />
+				</div>
+				<div class="input">
+					 学　　号：<input type="text" name="account" id="account" value="<?=$this->account ?>" readonly />
+				</div>
+				<div class="input">身份证号：<input type="text" name="personID" id="personID" /></div>
+				<div class="input">宿舍号　：<input type="text" name="hostel" id="hostel" /></div>
+				<div class="input">籍　　贯：<input type="text" name="address"  id="address" /></div>
+				<div class="input">民　　族：<input type="text" name="nation" id="nation" /></div>
+				<div class="input">备　　注：<input type="text" name="remark" id="remark" /></div>
+				<div>
+				  	 性　　别：<label><input type="radio" name="sex" id="sex1" value="男" checked/>男</label>
+							 <label><input type="radio" name="sex" id="sex2" value="女"/>女</label>
+				</div>
+				<div>
+					 政治面貌：<label><input type="radio" name="member" id="member1" value="团员"  />团员</label>
+								<label><input type="radio" name="member" id="member2" value="党员" />党员</label>
+								<label><input type="radio" name="member" id="member3" value="其他" checked />其他</label>
+				</div>
+			</form>
+		</div>
+		<div id="btn">
+			<button type="submit" id="sub" title="提交信息">提交信息</button>
+		</div>
+	</div>	
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+	background-color: aliceblue;
+}
+#releaselist{
+	border: 1px solid #a4b8d9;
+    width: 1130px;
+    min-height: 485px;
+    background-color: #8edae0;
+}
+#title{
+	margin-top: 20px;
+	margin-left: 350px;
+}
+#releaselist #title input{
+	min-width: 505px;
+	font-size: 18px;
+	height: 45px;
+	border: 1px solid #46a5ea;
+	font-weight: 600;
+}
+#release{
+	margin: 20px;
+	margin-left: 350px;
+}
+#release textarea{
+	min-width: 500px;
+	font-size: 15px;
+	min-height: 300px;
+	border: 1px solid #46a5ea;
+}
+button{
+	width: 120px;
+	margin-top: 20px;
+	margin-left: 550px;
+	height: 40px;
+	border: 0px;
+	background-color: #3b94cc;
+	border-radius: 0.3em;
+	color: #fff;
+	font-size: 16px;
+}

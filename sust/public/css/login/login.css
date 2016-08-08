@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+/************初始化*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin-top: 0;
+	margin-left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('/img/login_bg.jpg') no-repeat fixed 0 0;
+    background-size: 100%;
+    position: relative;
+    font-family: 微软雅黑;
+}
+#index{
+	position: absolute;
+	top: 10px;
+	right: 30px;
+}
+#index a:link,#index a:visited{
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+}
+/************登录区*/
+#login{
+	position: absolute;
+	height:300px;
+	width:360px;
+	border-radius: 0.4em;
+	top: 180px;
+	left:520px;
+	background-color: rgba(239, 235, 245, 0.8);
+}
+#right{
+	height:300px;
+	width:300px;
+	margin-left: 30px;
+	position: relative;
+}
+/************右登录块*/
+
+.select{
+	font-size: 18px;
+	margin-top: 15px;
+	height: 25px;
+}
+.select label{
+	width: 50px;
+	margin-left: 5px;
+}
+.inp{
+	margin-top:15px;
+	height: 60px;
+	width: 100%;
+}
+.inp input{
+	line-height: 45px;
+	height: 45px;
+	width: 100%;
+	font-size: 15px;
+	border: 1px solid #9697E3;
+	border-radius: 0.3em;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-weight: 600;
+}
+.inp .note{
+	font-size: 14px;
+	height: 30px;
+	color: red;
+}
+.btn{
+	margin-top: 15px;
+}
+.btn button{
+	background-color: #4B79CD;
+	border: none;
+	border-radius: 0.3em;
+	width: 100%;
+	height: 45px;
+	color: #fff;
+	font-size: 20px;
+}
+/************修改密码块*/
+.forget{
+	height:45px;
+	width: 100%;
+	text-align: center;
+	bottom:0px;
+	position: absolute;
+}
+.forget a:link,.forget a:visited{
+	font-size:12px;
+	text-decoration:none;
+	color:#3056B3;
+}
+.forget a:hover{
+ 	color:red;
+	position:relative;
+	text-decoration:underline;
+	top:1px;
+	left:1px;
+}
+

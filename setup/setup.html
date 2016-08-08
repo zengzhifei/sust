@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>安装OA教务管理系统</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script  language="javascript">
+			function next(){
+				if(document.getElementById("checkRead").checked){
+					window.location.href="http://sust.com/Install/install";
+				}
+			}
+
+			function quit(){
+				if (navigator.userAgent.indexOf("MSIE") > 0) {  
+           			 if (navigator.userAgent.indexOf("MSIE 6.0") > 0) {  
+               			 window.opener = null; window.close();  
+           			 }else{  
+               		 	 window.open('', '_top'); window.top.close();  
+           			 } 	 
+       			 }else if (navigator.userAgent.indexOf("Firefox") > 0) {  
+           			 	window.location.href = 'about:blank ';
+      		  	}else {  
+          		  window.opener = null; window.open('', '_self', ''); window.close();  
+       			 }  
+			}
+		</script>
+	</head>
+
+	<body bgcolor="grey">
+		<center>
+			<p style="font-size:30px">安装教务管理OA系统</p>
+			<div style="background-color:#fff;width:600px;height:300px;text-align:left;font-size:16px;color:grey;position:relative;">
+				<h1 style="text-align:center;font-size:24px;font-weight:bold;padding-top:10px;">声明</h1>
+					<ol>
+						<li>该软件仅作为学业测试软件，不提供商业。</li>
+						<li>未经授权，不能将软件转让他人，或卖给他人。</li>
+						<li>不得利用软件做有违反国家法律法规的事，或有悖道德规范的事。</li>
+						<li>一经发现有违反规则的行为，作者有权立即停止提供该软件服务。</li>
+						<li>该软件一切解释权归作者所有。</li>
+					<ol>
+				<div style="text-align:center;position:absolute;bottom:5px;left:150px;color:red;font-size:14px">
+					<label><input type="checkbox" name="read" id="checkRead"  />我确定已经认真阅读以上声明条例。</label>
+				</div>	
+			</div>
+			<div style="text-algin:center;margin-top:20px;">
+				<button style="width:100px;height:35px;border-radius:0.2em;border:0px;" onclick="next()">下一步</button>&nbsp;&nbsp;&nbsp;<button style="width:100px;height:35px;border-radius:0.2em;border:0px" onclick="quit()">退　出</button>
+			</div>
+		</center>
+	</body>
+
+</html>

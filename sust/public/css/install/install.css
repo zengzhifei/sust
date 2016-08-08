@@ -1,0 +1,35 @@
+body{
+	background-color: grey;
+}
+table{
+	margin: 100px auto;
+	width: 1000px;
+}
+tr .text-left{
+	text-align: right;
+	font-size:16px;
+}
+tr .text-right{
+	color:yellow;
+	font-size: 12px;
+	width:550px;
+}
+input{
+	text-align: left;
+	width: 260px;
+	border: 1px solid #a7b6c4;
+	height: 25px;
+	border-radius: 0.2em;
+}
+.tip{
+	text-align: left;
+	font-size: 14px;
+	color:red;
+	height: 25px;
+}
+button{
+	width:100px;
+	height:35px;
+	border-radius:0.2em;
+	border:0px;
+}

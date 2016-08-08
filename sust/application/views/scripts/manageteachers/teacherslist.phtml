@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="StyleSheet" type="text/css" href="/css/admin/manage_teachers_list.css?3">
+	<script type="text/javascript" src="/js/jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="/js/box/zDialog.js?11"></script>
+	<script type="text/javascript" src="/js/admin/manage_teachers_list.js?7"></script>
+</head>
+<body>
+	<div id="teacherlist">
+		<div id="search_add">
+			<form>
+			<div class="findkey">查找：<input type="text" name="key_word" id="keyword" placeholder="请在这里输入关键字" />
+								<button type="button" title="搜索" id="search">搜索</button>			
+			</div>
+			<div class="add"><a title="添加教师" href="/manageteachers/addteacherui" >添加</a></div>
+		</div>
+		<div id="tablelist">
+			<table>
+				<tr class="tabletitle">
+					<td>ID</td><td>姓名</td><td>账号</td><td>密码</td><td>电话</td><td>Email</td><td>初始化</td><td>操作</td>
+				</tr>
+			<?php if(count($this->teachers)){foreach ($this->teachers as $key=>$teacher){ ?>
+				<tr class="lists">
+					<td class="tdID"><?=$teacher['teacher_id'] ?></td>
+					<td class="change" name="teacher_name" account=<?=$teacher['teacher_account']?>><?=$teacher['teacher_name'] ?></td>
+					<td><?=$teacher['teacher_account'] ?></td>
+					<td class="change" name="teacher_password" account=<?=$teacher['teacher_account']?>><?=$teacher['teacher_password'] ?></td>
+					<td class="change" name="teacher_phone" account=<?=$teacher['teacher_account']?>><?=$teacher['teacher_phone'] ?></td>
+					<td class="change" name="teacher_email" account=<?=$teacher['teacher_account']?>><?=$teacher['teacher_email'] ?></td>
+					<td class="change" name="teacher_key" account=<?=$teacher['teacher_account']?>><?=$teacher['teacher_key'] ?></td>
+					<td><a title="删除该信息" href="javascript:void(0)" account=<?=$teacher['teacher_account']?> class="delete">删除</a>&nbsp;|&nbsp;
+						<a title="修改该信息" href="javascript:void(0)" class="alter">修改</a></td>
+				</tr>
+			<?php }}else{?>
+				<tr><td id="note" colspan='8'>暂无信息</td></tr>
+			<?php }?>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

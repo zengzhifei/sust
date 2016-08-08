@@ -1,0 +1,41 @@
+/**
+ *@author:zengzf
+ *2016.03.16
+ */
+ //admin左侧导航
+ $(function(){
+ 	//学生管理
+ 	$("#parent_info").click(function(){
+ 		$("#child_info").toggle(500);
+ 	});
+ 	//学生管理
+ 	$("#parent_student").click(function(){
+ 		$("#child_student").toggle(500);
+ 	});
+	//教师管理
+ 	$("#parent_teacher").click(function(){
+ 		$("#child_teacher").toggle(500);
+ 	});
+	//系统管理
+ 	$("#parent_web").click(function(){
+ 		$("#child_web").toggle(500);
+ 	});
+ 	//通知管理
+ 	$("#parent_publish").click(function(){
+ 		$("#child_publish").toggle(500);
+ 	});
+ 	//添加三角图片
+ 	$(".parent_title").click(function(){
+ 		if($(this).hasClass("bg_img")){
+ 			$(this).removeClass("bg_img");
+ 		}else{
+ 			$(this).addClass("bg_img");
+ 		}
+ 	});
+ 	//点击添加背景色
+ 	$(".bgcolor").click(function(){
+ 		$("#left a").removeClass("child_background");
+ 		$(this).addClass("child_background");
+ 	})
+
+ })

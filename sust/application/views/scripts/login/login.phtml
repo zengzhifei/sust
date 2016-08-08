@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>登录</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="/css/login/login.css?20160301" rel="StyleSheet" type="text/css">
+		<script type="text/javascript" src="/js/jquery-1.12.0.js"></script>
+		<script type="text/javascript" src="/js/box/zDialog.js?201600303"></script>
+		<script type="text/javascript" src="/js/login/login.js?201600305"></script>
+	</head>
+
+	<body>
+		<div id="index">
+			<a href="/Index/index" title="回到首页">首页</a>
+		</div>
+		<div id="login">
+			<div id="right">
+				<form action="/login/check" method="POST" id="sub">
+					<div class="select">
+						选择：<label><input type="radio" name="radio" value="student" checked />学生</label>
+							  <label><input type="radio" name="radio" value="teacher" />教师</label>
+							  <label><input type="radio" name="radio" value="admin" />管理员</label>
+					</div>
+					<div class="inp" id="inp">
+						<input type="text" id="account" name="account" placeholder="学号/工号/管理员账户" />
+						<div class ="note" id="accountNote"></div>
+					</div>
+					<div class="inp" id="inp">
+						<input type="password" id="psw" name="password" placeholder="密码" />
+						<div class="note" id="pswNote"></div>
+					</div>
+				</form>
+					<div class="btn">
+						<button type="button" id="btn" title="登录">登录</button>
+					</div>
+					<div class="forget">
+						<a href="/Login/findpassword" title="忘记密码?">忘了密码?</a> |
+						<a href="/Register/register" target="_blank" title="注册账号">注册账号</a>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>

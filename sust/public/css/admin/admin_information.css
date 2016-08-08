@@ -1,0 +1,31 @@
+body{
+	background-color: #D2E1EC;
+}
+#admininfo table{
+	border-collapse: collapse;
+	margin: 50px auto;
+	width: 600px;
+}
+#admininfo table input{
+	width: 300px;
+	height: 35px;
+	font-size: 15px;
+	font-weight: 600;
+	border:1px solid blue;
+	text-align: center;
+}
+#admininfo table,#admininfo tr,#admininfo td{
+	border: 1px solid #87a5b0;
+	height: 50px;
+	width: 500px;
+	background-color: #fff;
+	font-size: 14px;
+	text-align: center;
+}
+#admininfo .title{
+	width: 150px;
+    font-size: 16px !important;
+    background-color: #ccace6 !important;
+    font-weight: 600;
+    font-family: 微软雅黑;
+}

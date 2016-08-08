@@ -1,0 +1,23 @@
+body{
+	background-color: #D2E1EC;
+}
+table{
+	border-collapse: collapse;
+	margin: 50px auto;
+	min-width: 800px;
+}
+table,tr,td{
+	border: 1px solid #87a5b0;
+	height: 40px;
+	width: 500px;
+	background-color: #fff;
+	font-size: 14px;
+	font-family: 微软雅黑;
+	text-align: center;
+}
+.title{
+	width: 150px;
+    font-size: 16px !important;
+    background-color: #ccace6 !important;
+    font-weight: 600;
+}

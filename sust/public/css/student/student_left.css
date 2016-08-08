@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+	background-color: aliceblue;
+}
+#left{
+	border: 1px solid #a4b8d9;
+    margin-top: 10px;
+    margin-left: 10px;
+	width:175px;
+	min-height: 485px;
+}
+.parent_title{
+    background:url(/img/Shape1.png) no-repeat 5px center #eef3f7;
+    border-bottom: 1px solid #a4b8d9;
+    height: 25px;
+    line-height: 25px;
+    color: #4c4c4c;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 15px;
+    cursor:pointer;
+}
+.bg_img{
+    background:url(/img/Shape2.png) no-repeat 5px center #eef3f7 !important;
+}
+.child_title{
+    font-size: 14px;
+    width: 175px;
+    line-height: 30px;
+    background-color: #fff;
+}
+.child_background{
+    background-color: #dbe8f2;
+}
+a:link,a:visited{
+    display:block;
+    width: 175px;
+    height: 30px;
+    text-indent: 48px;
+	text-decoration:none;
+	color:blue;
+}
+a:hover{
+    background-color: #dbe8f2;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>教务管理OA系统</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="/css/index/index.css?7" rel="StyleSheet" type="text/css">
+		<script src="/js/jquery-1.12.0.js" type="text/javascript"></script>
+		<script src="/js/index/publish_show.js?10" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="content">
+			<div id="top">
+				<div id="logo">
+					<img src="/img/logo.png" title="陕西科技大学教务管理系统" />
+				</div>
+				<div class="name"><?=$this->name ?></div>
+				<div class="time"><?=$this->time ?></div>
+				<div class="login"><a href="/Login/login" title="登录">登录</a> | <a href="/Register/register" title="注册">注册</a>
+				</div>
+				<div id="show_info" title="展示通知">展示通知</div>
+			</div>
+			<div id="middle">
+				<div id="show">
+					<div id="publish" style="display:none"></div>
+					<div id="publishcontent" style="display:none"></div>
+					<div id="publishcontent-show"></div>
+				</div>
+				<div id="imgnum">
+					<div id="imgshow">
+						<img src="/img/index_11.jpg" imgid='1' title="陕西科技大学">
+						<img src="/img/index_22.jpg" imgid='2' title="陕西科技大学">
+						<img src="/img/index_33.jpg" imgid='3' title="陕西科技大学">
+					</div>
+					<ul>
+						<li class="on">1</li>
+						<li>2</li>
+						<li>3</li>
+					</ui>
+				</div>
+			</div>
+			<div id="bottom">Copyright &copy; 2016 Zengzf (仅用于毕业设计)</div>
+			<div id="personnum">浏览总量<?=$this->countID?>人</div>
+		</div>	
+	</body>
+</html>
+
+
+
+

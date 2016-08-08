@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="StyleSheet" type="text/css" href="/css/admin/manage_web_list.css?2">
+	<script type="text/javascript" src="/js/jquery-1.12.0.js"></script>
+	<script src="/js/jedate/jedate.js" type="text/javascript"></script>
+	<script src="/js/box/zDialog.js?1" type="text/javascript"></script>
+	<script src="/js/admin/manage_web_list.js?2" type="text/javascript"></script>
+	
+</head>
+<body>
+	<div id="weblist">
+		<div id="time">
+			<form>
+			查找：<input type="text" name="start_time" id="start_time" placeholder="开始时间" readonly /> -
+				<input type="text" name="end_time" id="end_time" placeholder="结束时间" readonly />
+				<button type="button" id="search" title="查找">查找</button>
+			</form>
+		</div>
+		<div id="tablelists">
+			<table>
+				<tr class="tabletitle">
+					<td>ID</td><td>浏览时间</td><td>IP</td><td>来源地址</td><td>服务器名</td><td>主机名</td>
+				</tr>
+				<?php if(count($this->webCount)){foreach ($this->webCount as $key=>$count){ ?>
+				<tr class="lists">
+					<td class="tdID"><?=$count['webCount_id'] ?></td>
+					<td><?=date("Y-m-d H:i:s",$count['webCount_date']) ?></td>
+					<td><?=$count['webCount_ip'] ?></td>
+					<td><?=$count['webCount_page'] ?></td>
+					<td><?=$count['webCount_hostname'] ?></td>
+					<td><?=$count['webCount_host'] ?></td>
+				</tr>
+				<?php }}else{?>
+					<tr><td id="note" colspan='6'>暂无信息</td></tr>
+				<?php }?>
+			</table>
+		</div>
+	</div>	
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+	background-color: aliceblue;
+}
+#coursenumber{
+	border: 1px solid #a4b8d9;
+    width: 1130px;
+    min-height: 485px;
+    background-color: #fff;
+}
+#coursenumber table{
+	text-align: center;	
+	margin: 25px auto;
+	width: 750px;
+	border-collapse: collapse;
+}
+#tabletitle{
+	font-size: 16px;
+	font-weight: 600;
+	height: 28px;
+	line-height: 28px;
+	color: #fff;
+	background-color: #7876a1;
+}
+#note{
+	padding-top: 17px;
+	height: 40px;
+	color: red;
+}
+.lists{
+	height: 40px;
+	border-bottom: 2px solid #bedad5;
+	font-size: 14px;
+}
+.lists .tdID{
+	font-weight: bold;
+}

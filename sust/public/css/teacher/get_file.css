@@ -1,0 +1,39 @@
+body{
+	background-color:#F8F8FF;
+}
+#filetable{
+	border: 1px solid #a4b8d9;
+    width: 1130px;
+    height: 485px;
+}
+
+#filetable table{
+	text-align: center;
+	border-collapse: collapse;
+	width: 1085px;
+	margin-top: 20px;
+	margin-left: 15px;
+}
+#filetable #tabletitle{
+	color:#fff;
+	height: 33px;
+	background-color: #7876a1;
+}
+#filetable .lists{
+	height: 40px;
+	border-bottom: 2px solid #bedad5;
+	font-size: 14px;
+}
+a:link,a:visited{
+	text-decoration: none;
+	color:blue;
+}
+a:hover{
+	color:red;
+	text-decoration:underline; 
+}
+#note{
+	text-align: center;
+	height: 40px;
+	color: red;
+}

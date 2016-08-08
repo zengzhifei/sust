@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="/css/admin/get_release.css" type="text/css" rel="StyleSheet" >
+	<script type="text/javascript" src="/js/jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="/js/box/zDialog.js"></script>
+	<script type="text/javascript" src="/js/admin/get_release.js?7"></script>	
+</head>
+<body>
+	<div id="release">
+		<table>
+			<tr id="releasetitle">
+				<td>通知ID</td><td>主题</td><td>作者</td><td>时间</td><td>操作</td>
+			</tr>
+			<?php if(count($this->releases)){ foreach ($this->releases as $key => $release){ ?>
+			<tr class="lists">
+				<td class="tdID"><?=$release['publish_id'] ?></td>
+				<td><?=$release['publish_title'] ?></td>
+				<td><?=$release['publish_author'] ?></td>
+				<td><?=date("Y-m-d H:i:s",$release['publish_date']) ?></td>
+				<td><a href="javascript:void(0)" class="deleterelease" title="删除该通知" releaseid="<?=$release['publish_id'] ?>" >删除</td>
+			</tr>
+			<?php }}else{?>
+			<tr><td id="note" colspan="5">暂无通知</td></tr>
+			<?php }?>
+		</table>
+	<div>
+</body>
+</html>

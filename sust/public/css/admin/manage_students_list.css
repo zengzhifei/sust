@@ -1,0 +1,62 @@
+body{
+	background-color:#F8F8FF;
+}
+#studentlist{
+	border: 1px solid #a4b8d9;
+    width: 1130px;
+    height: 485px;
+}
+.findkey{
+	font-size: 15px;
+	font-weight: 600;
+	height: 26px;
+	line-height: 26px;
+	margin-top: 3px;
+    margin-left: 15px;
+}
+.findkey input{
+	height: 20px;
+	width: 200px;
+}
+.findkey button{
+	width: 60px;
+	margin-left: 15px;
+	background-color: #2a9fdb;
+	border: 0px;
+	border-radius: 0.2em;
+	height: 25px;
+	color: #fff;
+}
+#tablelist table{
+	text-align: center;
+	border-collapse: collapse;
+	width: 1085px;
+	margin-top: 20px;
+	margin-left: 15px;
+}
+#tablelist .tabletitle{
+	color:#fff;
+	height: 33px;
+	background-color: #7876a1;
+}
+#tablelist .lists{
+	height: 40px;
+	border-bottom: 2px solid #bedad5;
+	font-size: 14px;
+}
+#tablelist .tdID{
+	font-weight: bold;
+}
+a:link,a:visited{
+	text-decoration: none;
+	color:blue;
+}
+a:hover{
+	color:red;
+	text-decoration:underline; 
+}
+#note{
+	padding-top: 17px;
+	height: 40px;
+	color: red;
+}

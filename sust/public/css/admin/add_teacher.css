@@ -1,0 +1,40 @@
+body{
+	background-color: #bbdcf9;
+}
+#addteacher{
+	width: 610px;
+	margin-top: 0px;
+	margin-left: 400px;
+}
+.left{
+	float: left;
+	margin-top: 30px;
+	width: 300px;
+	height: 40px;
+}
+.left input{	
+	width: 300px;
+	height: 40px;
+	border: 1px solid #524fd2;
+	border-radius: 0.3em;
+	font-size: 18px;
+}
+.right{
+    float: right;
+    margin-top: 30px;
+    width: 300px;
+    font-size: 14px;
+    color: red;
+    height: 40px;
+    line-height: 40px;
+}
+button{
+	width: 300px;
+	height: 40px;
+	border: 0px;
+	border-radius: 0.2em;
+	background-color: #4B79CD;
+	font-size: 18px;
+	color: #fff;
+	margin-top: 30px;
+}

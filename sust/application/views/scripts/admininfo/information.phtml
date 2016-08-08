@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="/css/admin/admin_information.css?1" type="text/css" rel='StyleSheet'>
+	<script src="/js/jquery-1.12.0.js" type="text/javascript"></script>
+	<script src="/js/box/zDialog.js" type="text/javascript"></script>
+	<script src="/js/admin/admin_information.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="admininfo">
+		<table>
+			<tr>
+				<td class="title">姓名：</td>
+				<td class="change" name="admin_name" account=<?=$this->account ?>><?=$this->name ?></td>
+			</tr>
+			<tr>
+				<td class="title">账号：</td>
+				<td><?=$this->account ?></td>
+			</tr>
+			<tr>
+				<td class="title">电话：</td>
+				<td class="change" name="admin_phone" account=<?=$this->account ?>><?=$this->phone ?></td>
+			</tr>
+			<tr>
+				<td class="title">邮箱：</td>
+				<td class="change" name="admin_email" account=<?=$this->account ?>><?=$this->email ?></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/**
+ *@author:zengzf
+ *2016.03.27
+ ***/
+ $(function(){
+ 	//隐藏按钮
+ 	if($("#note").length>0){
+ 		$("#btn").hide();
+ 	}
+ 	//提交选课
+ 	$(document).on('click','#sub',function(){
+ 		Dialog.confirm('警告：确认提交评论？',function(){
+ 			$.ajax({
+	 			url:'/Evaluate/doevaluate',
+	 			type:'POST',
+	 			data:$("form").serialize(),
+	 			success:function(msg){
+	 				if(msg){
+	 					setTimeout("window.location.reload()",2000);
+	 					box('ok',"评论成功");
+	 				}else{
+	 					box('error',"评论失败");
+	 				}
+	 			},
+	 			error:function(){
+	 				box('error',"网络错误");
+	 			}
+ 			})
+ 		})
+ 	})
+
+ })

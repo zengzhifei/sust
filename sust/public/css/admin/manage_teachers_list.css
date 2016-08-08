@@ -1,0 +1,82 @@
+body{
+	background-color:#F8F8FF;
+}
+#teacherlist{
+	border: 1px solid #a4b8d9;
+    width: 1130px;
+    height: 485px;
+}
+#search_add{
+	margin-top: 3px;
+	margin-left: 15px;
+	height: 30px;
+	width: 1084px;
+	line-height: 30px;
+}
+.findkey{
+	float:left;
+	font-size: 15px;
+	font-weight: 600;
+}
+.findkey input{
+	height: 20px;
+	width: 200px;
+}
+.findkey button{
+	width: 60px;
+	margin-left: 10px;
+	background-color: #2a9fdb;
+	border: 0px;
+	border-radius: 0.2em;
+	height: 25px;
+	color: #fff;
+}
+.add{
+	float: right;
+	background-color: #2a9fdb;
+	width: 60px;
+	border: 0px;
+	border-radius: 0.2em;
+	height: 25px;
+	margin-top: 3px;
+	font-size: 15px;
+	text-align: center;
+	line-height: 25px;
+}
+.add a:link,.add a:visited{
+	color: #fff;
+	text-decoration: none;
+}
+#tablelist table{
+	text-align: center;
+	border-collapse: collapse;
+	width: 1085px;
+	margin-top: 16px;
+	margin-left: 15px;
+}
+#tablelist .tabletitle{
+	color:#fff;
+	height: 33px;
+	background-color: #7876a1;
+}
+#tablelist .lists{
+	height: 40px;
+	border-bottom: 2px solid #bedad5;
+	font-size: 14px;
+}
+.lists .tdID{
+	font-weight: bold;
+}
+.lists a:link,.lists a:visited{
+	text-decoration: none;
+	color: blue;
+}
+.lists a:hover{
+	text-decoration:underline;
+	color: red;
+}
+#note{
+	padding-top: 17px;
+	height: 40px;
+	color: red;
+}

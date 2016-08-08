@@ -1,0 +1,26 @@
+/**
+ *@author:zengzf
+ *2016.03.23
+ **/
+ $(function(){
+ 	//邮件联系
+ 	$(document).on('click','#sub',function(){
+ 		$.ajax({
+ 			url:'/Contact/sendmail',
+ 			type:'POST',
+ 			data:$("form").serialize(),
+ 			success:function(msg){
+ 				if(msg){
+ 					setTimeout("window.location.reload()",2000);
+ 					box('ok','发送成功');
+ 				}else{
+ 					box('error','发送失败');
+ 				}
+ 			},
+ 			error:function(){
+ 				box("error","网络错误");
+ 			}
+ 		})
+ 	})
+
+ })

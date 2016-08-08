@@ -1,0 +1,48 @@
+body{
+	background-color: aliceblue;
+}
+#curriculumlist{
+	border: 1px solid #a4b8d9;
+    width: 1130px;
+    min-height: 485px;
+    background-color: #efedf8;
+}
+#curriculumlist table{
+	text-align: center;
+	margin: 25px auto;
+	min-width: 800px;
+}
+#curriculumlist table,#curriculumlist tr,#curriculumlist td{
+	border-collapse: collapse;
+	border: 1px solid #dddaef;
+}
+#curriculumlist td{
+	height: 40px;
+	width: 150px;
+}
+#curriculumlist input{
+	width:120px;
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	border: 1px solid #a4b8d9;
+}
+#tabletitle{
+	font-size: 16px;
+	font-weight: 600;
+	height: 28px;
+	line-height: 28px;
+	color: #fff;
+	background-color: #7876a1;
+}
+#curriculumlist .tdID{
+	background-color: #399bb6;
+	font-weight: 600;
+	width: 50px !important;
+	height: 40px;
+}
+#tip{
+	font-size: 13px;
+	color:red;
+	margin:-20px 140px;
+}

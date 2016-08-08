@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="StyleSheet" type="text/css" href="/css/admin/manage_students_list.css?2">
+	<script type="text/javascript" src="/js/jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="/js/box/zDialog.js?11"></script>
+	<script type="text/javascript" src="/js/admin/manage_students_list.js"></script>	
+</head>
+<body>
+	<div id="studentlist">
+		<form>
+			<div class="findkey">
+				查找：<input type="text" name="key_word" id="keyword" placeholder="请在这里输入关键字" /><button type="button" title="搜索" id="search">搜索</button>
+			</div>
+		</form>
+		<div id="tablelist">
+			<table>
+				<tr class="tabletitle">
+					<td>ID</td><td>姓名</td><td>账号</td><td>密码</td><td>身份证号</td><td>性别</td><td>地址</td><td>民族</td><td>身份</td><td>宿舍号</td><td>备注</td><td>初始化</td><td>操作</td>
+				</tr>
+				<?php if(count($this->students)){foreach ($this->students as $key=>$student){?>
+				<tr class="lists">
+					<td class="tdID"><?=$student['student_id'] ?></td><td><?=$student['student_name'] ?></td>
+					<td><?=$student['student_account'] ?></td><td><?=$student['student_password'] ?></td>
+					<td><?=$student['student_personID'] ?></td><td><?=$student['student_sex'] ?></td>
+					<td><?=$student['student_address'] ?></td><td><?=$student['student_nation'] ?></td>
+					<td><?=$student['student_member'] ?></td><td><?=$student['student_hostel'] ?></td>
+					<td><?=$student['student_note'] ?></td><td><?=$student['student_key'] ?></td>
+					<td><a title="删除" href="javascript:void(0)" class="delete" account="<?=$student['student_account'] ?>">删除</a></td>
+				</tr>
+				<?php }}else{?>
+					<tr><td colspan='13' id="note">暂无学生信息</td></tr>
+				<?php }?>
+			</table>
+		</div>
+	
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="/css/admin/admin_left.css?1" rel="StyleSheet" type="text/css">
+	<script type="text/javascript" src="/js/jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="/js/admin/admin_left.js?1"></script>
+</head>
+<body>
+	<div id="left">
+		<div class="parent_title bg_img" id="parent_info" title="个人资料">个人资料</div>
+			<div id="child_info" style="display:block" class="child_title">
+				<a href="/Admininfo/information" target="right" class="bgcolor child_background" title="个人信息">个人信息</a>
+			</div>
+		<div class="parent_title" id="parent_student" title="学生管理">学生管理</div>
+			<div id="child_student" style="display:none;" class="child_title">
+				<a href="/Managestudents/studentslist" target="right" title="学生管理" class="bgcolor">学生管理</a>
+			</div>
+		<div class="parent_title" id="parent_teacher" title="教师管理">教师管理</div>
+			<div id="child_teacher" style="display:none" class="child_title">
+				<a href="/Manageteachers/teacherslist" target="right" title="教师管理" class="bgcolor">教师管理</a>
+			</div>		
+		<div class="parent_title" id="parent_web" title="网站管理">网站管理</div>
+			<div id="child_web" style="display:none" class="child_title">	
+				<a href="/Manageweb/getinfo" target="right" title="IP追踪" class="bgcolor">IP追踪</a>
+
+			</div>
+		<div class="parent_title" id="parent_publish" title="通知管理">通知管理</div>
+			<div id="child_publish" style="display:none" class="child_title">	
+				<a href="/Publish/release" target="right" title="发布通知" class="bgcolor">发布通知</a>
+				<a href="/Publish/getrelease" target="right" title="查看通知" class="bgcolor">查看通知</a>
+			</div>
+	</div>
+</body>
+</html>

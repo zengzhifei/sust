@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<link href="/css/student/curriculum.css" type="text/css" rel="StyleSheet">
+</head>
+<body >
+	<div id="curriculumlist">
+		<table>
+			<tr id="tabletitle">
+				<td>星期：</td><td>一</td><td>二</td><td>三</td><td>四</td><td>五</td>
+			</tr>	
+			<?php if(count($this->curriculum)){foreach($this->curriculum as $key=>$val){?>
+				<tr class="lists">	
+					<td class="tdID">第<?=$key+1 ?>节</td>
+					<td><?=$val[0]['courseTime_courseName'] ?></td>
+					<td><?=$val[1]['courseTime_courseName'] ?></td>
+					<td><?=$val[2]['courseTime_courseName'] ?></td>
+					<td><?=$val[3]['courseTime_courseName'] ?></td>
+					<td><?=$val[4]['courseTime_courseName'] ?></td>
+				</tr>
+			<?php }}else{ ?>
+				<tr><td colspan='6' id="note">暂无课表信息</td></tr>
+			<?php }?>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body{
+	background-color:#F8F8FF;
+}
+#mycoursealist{
+	border: 1px solid #a4b8d9;
+    width: 1130px;
+    height: 485px;
+}
+
+#mycoursealist table{
+	text-align: center;
+	border-collapse: collapse;
+	width: 1085px;
+	margin-top: 20px;
+	margin-left: 15px;
+}
+#mycoursealist #tabletitle{
+	color:#fff;
+	height: 33px;
+	background-color: #7876a1;
+}
+#mycoursealist .lists{
+	height: 40px;
+	border-bottom: 2px solid #bedad5;
+	font-size: 14px;
+}
+#mycoursealist .tdID{
+	font-weight: bold;
+}
+#note{
+	padding-top: 17px;
+	height: 40px;
+	color: red;
+}
+#btn button{
+	width: 100px;
+	height: 40px;
+	border: 0px;
+	border-radius: 0.3em;
+	background-color: #7575cc;
+	font-size: 15px;
+	color: #fff;
+	margin-top: 20px;
+	margin-left: 480px;
+}

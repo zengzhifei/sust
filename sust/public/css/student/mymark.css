@@ -1,0 +1,35 @@
+body{
+	background-color: aliceblue;
+}
+#marklists{
+	border: 1px solid #a4b8d9;
+    width: 1130px;
+    min-height: 485px;
+    background-color: #efedf8;
+}
+#marklists table{
+	text-align: center;
+	margin: 25px auto;
+	min-width: 800px;
+	border-collapse: collapse;
+}
+#marklists .lists tr,#marklists .lists td{
+	border: 1px solid #dddaef;
+}
+#marklists td{
+	height: 40px;
+	width: 150px;
+}
+#tabletitle{
+	font-size: 16px;
+	font-weight: 600;
+	height: 28px;
+	line-height: 28px;
+	color: #fff;
+	background-color: #7876a1;
+}
+#note{
+	font-size: 13px;
+	color:red;
+	margin:-20px 140px;
+}

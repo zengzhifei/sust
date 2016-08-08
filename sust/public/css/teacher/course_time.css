@@ -1,0 +1,56 @@
+body{
+	background-color: aliceblue;
+}
+#timetable{
+	border: 1px solid #a4b8d9;
+    width: 1130px;
+    min-height: 485px;
+    background-color: #fff;
+}
+#timetable table{
+	text-align: center;	
+	margin: 25px auto;
+}
+#timetable table,#timetable tr,#timetable td{
+	border-collapse: collapse;
+	border: 1px solid #efedf8;
+}
+#tabletitle{
+	font-size: 16px;
+	font-weight: 600;
+	height: 28px;
+	line-height: 28px;
+	color: #fff;
+	background-color: #7876a1;
+}
+#timetable table input{
+	width: 180px;
+	height: 25px;
+	line-height: 25px;
+	border: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid aqua;
+	padding-top: 5px;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+}
+#timetable .daytime{
+	background-color: #399bb6;
+}
+#timetable #btn{
+	width: 100%;
+	margin: 10px auto;
+	text-align: center;
+}
+#btn button{
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	border: 0px;
+	border-radius: 0.2em;
+	background-color: #4B79CD;
+	font-size: 15px;
+	color: #fff;
+}

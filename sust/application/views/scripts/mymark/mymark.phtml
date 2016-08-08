@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="/css/student/mymark.css" type="text/css" rel="StyleSheet">
+</head>
+<body>
+	<div id="marklists">
+		<table>
+			<tr id="tabletitle"><td>科目：</td><td>学分：</td><td>分数：</td></tr>
+			<?php if(count($this->coursesName)){foreach ($this->coursesName as $key=>$val){ ?>
+				<tr class="lists">
+					<td><?=$val ?></td><td><?=$this->credits[$key] ?></td><td><?=$this->marks[$key] ?></td>
+				</tr>
+			<?php }}else{?>
+				<tr><td id="note" colspan="3">暂无成绩信息</td></tr>
+			<?php }?>
+		</table>
+	</div>
+</body>
+</html>

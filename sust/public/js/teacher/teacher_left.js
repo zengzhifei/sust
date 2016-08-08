@@ -1,0 +1,63 @@
+/**
+ *@author:zengzf
+ *2016.03.21
+ */
+ $(function(){
+ 	//点击下拉
+ 	 //个人信息
+ 	$(document).on('click','#parent_info',function(){
+ 		$("#child_info").toggle(500);
+ 	});
+ 	//添加课程
+ 	$(document).on('click','#parent_course',function(){
+ 		$("#child_course").toggle(500);
+ 	});
+ 	//查看选课
+ 	$(document).on('click','#parent_courseinfo',function(){
+ 		$("#child_courseinfo").toggle(500);
+ 	});
+ 	//成绩考核
+ 	$(document).on('click','#parent_mark',function(){
+ 		$("#child_mark").toggle(500);
+ 	});
+ 	//我的评价
+ 	$(document).on('click','#parent_remark',function(){
+ 		$("#child_remark").toggle(500);
+ 	});
+ 	//资料上传
+ 	$(document).on('click','#parent_upload',function(){
+ 		$("#child_upload").toggle(500);
+ 	});
+ 	//联系管理员
+ 	$(document).on('click','#parent_admin',function(){
+ 		$("#child_admin").toggle(500);
+ 	});
+ 	//添加三角图片
+ 	$(".parent_title").click(function(){
+ 		if($(this).hasClass("bg_img")){
+ 			$(this).removeClass("bg_img");
+ 		}else{
+ 			$(this).addClass("bg_img");
+ 		}
+ 	});
+ 	//点击添加添加背景色
+ 	$(document).on('click','.bgcolor',function(){
+ 		$("#left a").removeClass("child_background");
+ 		$(this).addClass("child_background");
+ 	})
+ 	//判断key添加背景色
+ 	$.ajax({
+ 		url:'/Global/getkey',
+ 		type:'POST',
+ 		data:null,
+ 		success:function(key){
+ 			if(key == 1){
+ 				$("#info_show").addClass('child_background');
+ 			}else if(key == 0){
+ 				$("#info_alter").addClass('child_background');
+ 			}
+ 		}
+ 	})
+
+
+ })

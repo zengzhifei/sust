@@ -1,0 +1,57 @@
+body{
+	background-color:#F8F8FF;
+}
+#weblist{
+	border: 1px solid #a4b8d9;
+    width: 1140px;
+    height: 485px;
+    margin-top: 8px;
+}
+#time{
+	height: 35px;
+	margin-top: 5px;
+	line-height: 35px;
+	font-size: 15px;
+	font-weight: 600;
+	margin-left: 15px;
+}
+#time input{
+	width: 200px;
+	height: 27px;
+	margin-top: -4px;
+	border: 1px solid #653fa5;
+}
+#time button{
+	width: 70px;
+	height: 30px;
+	margin-left: 20px;
+	background-color: #2a9fdb;
+	border: 0px;
+	border-radius: 0.3em;
+	color: #fff;
+}
+#tablelists table{
+	text-align: center;
+	border-collapse: collapse;
+	width: 1095px;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+#tablelists .tabletitle{
+	color:#fff;
+	height: 33px;
+	background-color: #7876a1;
+}
+#tablelists .lists{
+	height: 40px;
+	border-bottom: 2px solid #bedad5;
+	font-size: 14px;
+}
+.lists .tdID{
+	font-weight: bold;
+}
+#note{
+	padding-top: 17px;
+	height: 40px;
+	color: red;
+}
